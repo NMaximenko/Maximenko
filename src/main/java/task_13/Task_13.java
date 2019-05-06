@@ -11,7 +11,7 @@ public class Task_13 {
         BufferedReader buf= new BufferedReader(new InputStreamReader(System.in));
         str1=buf.readLine();
         str2=buf.readLine();
-        String res=str1.length()>str2.length()?str1:str2;
+        String res=str1.length()>=str2.length()?str1:str2;
         System.out.println(res);
 
     }
