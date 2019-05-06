@@ -10,13 +10,13 @@ public class Task_17 {
         FileWriter fileWriter=new FileWriter(file);
         String in="";
         BufferedWriter bufferedWriter=new BufferedWriter(fileWriter);
-        while (true){
-            if ((in=buf.readLine()).equals("stop!"))
-                break;
+        System.out.println("Ввод данных можно прекратить введя слово:stop!");
+        while (!(in=buf.readLine()).equals("stop!")){
             bufferedWriter.write(in);
             bufferedWriter.newLine();
         }
         buf.close();
         bufferedWriter.close();
+
     }}
-}
+
