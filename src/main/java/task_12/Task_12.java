@@ -9,13 +9,6 @@ public class Task_12 {
         String res;
         BufferedReader buf= new BufferedReader(new InputStreamReader(System.in));
         res=buf.readLine();
-        String str="";
-        for (char ch:res.toCharArray()){
-            if (ch==' ')
-                continue;
-            str+=ch;
-        }
-        System.out.println(str);
-
+        System.out.println(res.replaceAll(" ",""));
     }
 }
